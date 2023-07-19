@@ -26,12 +26,12 @@ class AuthController extends Controller
         $user = User::create([
             'name' => $request->input('name'),
             'email' => $request->input('email'),
-            'password' => Hash::make($request->input('password'))
+            'password' => Hash::make($request->input('password')),
+            'department' => $request->input('department'),
+            'role' => 'Medewerker',
         ]);
 
         Auth::login($user);
-
-
 
         event(new Registered($user));
 
