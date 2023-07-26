@@ -101,7 +101,7 @@
                                                 <label for="department"
                                                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Jouw
                                                     Afdeling</label>
-                                                <input type="text" name="department" id="department"
+                                                <input type="text" name="department" id="department" disabled
                                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                                                        value="{{auth()->user()->department}}" required>
                                             </div>
@@ -204,7 +204,7 @@
                                             </div>
                                             <div>
                                                 <label for="password_confirmation"
-                                                       class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Wachtwoord Confirmatie</label>
+                                                       class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Wachtwoord Bevestigen</label>
                                                 <input type="password" name="password_confirmation" id="password_confirmation"
                                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                                                        required
