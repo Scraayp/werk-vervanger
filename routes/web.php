@@ -66,6 +66,16 @@ Route::post('/register', [AuthController::class, 'store'])->name('register.store
 Route::post('/logout', [AuthController::class, 'destroy'])->name('logout');
 
 
+// -----------------------------------------------
+
+Route::get('/privacypolicy', function() {
+    return view('legal.privacypolicy');
+})->name('privacypolicy');
+
+Route::get('/termsofservice', function() {
+    return view('legal.termsofservice');
+})->name('termsofservice');
+
 
 // -----------------------------------------------
 
